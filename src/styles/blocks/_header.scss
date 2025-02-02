@@ -1,0 +1,48 @@
+@use '../helpers' as *;
+
+
+
+
+.header {
+	display: flex;
+	flex-direction: column;
+	
+	&__top {
+		@include mobile-s {
+			justify-content: center;
+		}
+
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-block: 10px;
+
+
+		.menu__link {
+			@include mobile-above {
+				padding-block: 15px;
+			}
+
+			font-weight: 700;
+		}
+	}
+	
+	
+	&__bottom {
+		display: flex;
+		overflow-x: auto;
+		flex-wrap: nowrap;
+		
+		scroll-behavior: smooth; /* Плавная прокрутка */
+		-webkit-overflow-scrolling: touch; /* Улучшение для iOS устройств */
+		scrollbar-width: thin; /* Для стилизации скроллбара (в браузерах с поддержкой) */
+
+		padding: 7px 0;
+		border-top: 2px solid var(--border-color);
+	}
+}
+
+
+
+

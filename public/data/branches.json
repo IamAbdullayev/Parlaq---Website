@@ -1,0 +1,67 @@
+{
+	"select": {
+		"name": "Azadlıq filialı",
+		"whatsapp": "https://wa.me/994558957279?text=Salam!%20Mən%20konsultasiyaya%20yazılmaq%20istəyirəm.",
+		"instagram": "https://www.instagram.com/parlaq_nitq_ve_psixoloji_inkishaf_merkezi/1",
+		"facebook": "https://www.facebook.com/parlaqnitqvepsixolojiinkishafmerkezi1",
+		"phone": "+994(55) 895 72 79",
+		"phoneHREF": "tel:994558957279",
+		"address": "Bakı şəhəri, Nərimanov rayonu, Əhməd Rəcəbli küçəsi, 1-ci məhəllə, 1-ci qonşuluq, 1-ci mənzil",
+		"location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96802.25793330756!2d46.286276155694104!3d40.69444361652646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x403f50fd8d5a9991%3A0xbe3f536560c50969!2z0JPRj9C90LTQttCw!5e0!3m2!1sru!2saz!4v1738000953806!5m2!1sru!2saz"
+	},
+
+	"branch1": {
+		"name": "Azadlıq filialı",
+		"whatsapp": "https://wa.me/994558957279?text=Salam!%20Mən%20konsultasiyaya%20yazılmaq%20istəyirəm.",
+		"instagram": "https://www.instagram.com/parlaq_nitq_ve_psixoloji_inkishaf_merkezi/1",
+		"facebook": "https://www.facebook.com/parlaqnitqvepsixolojiinkishafmerkezi1",
+		"phone": "+994(55) 895 72 79",
+		"phoneHREF": "tel:994558957279",
+		"address": "Bakı şəhəri, Nərimanov rayonu, Əhməd Rəcəbli küçəsi, 1-ci məhəllə, 1-ci qonşuluq, 1-ci mənzil",
+		"location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96802.25793330756!2d46.286276155694104!3d40.69444361652646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x403f50fd8d5a9991%3A0xbe3f536560c50969!2z0JPRj9C90LTQttCw!5e0!3m2!1sru!2saz!4v1738000953806!5m2!1sru!2saz"
+	},
+
+	"branch2": {
+		"name": "Xırdalan filialı",
+		"whatsapp": "https://wa.me/994558987279?text=Salam!%20Mən%20konsultasiyaya%20yazılmaq%20istəyirəm.",
+		"instagram": "https://www.instagram.com/parlaq_nitq_ve_psixoloji_inkishaf_merkezi/2",
+		"facebook": "https://www.facebook.com/parlaqnitqvepsixolojiinkishafmerkezi2",
+		"phone": "+994(55) 898 72 79",
+		"phoneHREF": "tel:994558987279",
+		"address": "Bakı şəhəri, Yasamal rayonu Əhməd Rəcəbli küçəsi, 1-ci məhəllə, 1-ci qonşuluq, 1-ci mənzil",
+		"location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194472.76853003312!2d49.69014890705255!3d40.39473700799217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d6bd6211cf9%3A0x343f6b5e7ae56c6b!2z0JHQsNC60YM!5e0!3m2!1sru!2saz!4v1738001024214!5m2!1sru!2saz"
+	},
+
+	"branch3": {
+		"name": "Sumqayıt filialı",
+		"whatsapp": "https://wa.me/994558717279?text=Salam!%20Mən%20konsultasiyaya%20yazılmaq%20istəyirəm.",
+		"instagram": "https://www.instagram.com/parlaq_nitq_ve_psixoloji_inkishaf_merkezi/3",
+		"facebook": "https://www.facebook.com/parlaqnitqvepsixolojiinkishafmerkezi3",
+		"phone": "+994(55) 871 72 79",
+		"phoneHREF": "tel:994558717279",
+		"address": "Bakı şəhəri, Sabuncu rayonu, Əhməd Rəcəbli küçəsi, 1-ci məhəllə, 1-ci qonşuluq, 1-ci mənzil",
+		"location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.2473655444464!2d49.84084407548345!3d40.425521155105045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x403087001d548a1f%3A0x3a49e0f9b9a79d0f!2zUGFybGFxIG5pdHEgaW5racWfYWYgbcmZcmvJmXpp!5e0!3m2!1sru!2saz!4v1737581622584!5m2!1sru!2saz"
+	},
+
+	"branch4": {
+		"name": "Əhmədli filialı",
+		"whatsapp": "https://wa.me/994558947279?text=Salam!%20Mən%20konsultasiyaya%20yazılmaq%20istəyirəm.",
+		"instagram": "https://www.instagram.com/parlaq_nitq_ve_psixoloji_inkishaf_merkezi/3",
+		"facebook": "https://www.facebook.com/parlaqnitqvepsixolojiinkishafmerkezi3",
+		"phone": "+994(55) 894 72 79",
+		"phoneHREF": "tel:994558947279",
+		"address": "Bakı şəhəri, Sabuncu rayonu, Əhməd Rəcəbli küçəsi, 1-ci məhəllə, 1-ci qonşuluq, 1-ci mənzil",
+		"location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.2473655444464!2d49.84084407548345!3d40.425521155105045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x403087001d548a1f%3A0x3a49e0f9b9a79d0f!2zUGFybGFxIG5pdHEgaW5racWfYWYgbcmZcmvJmXpp!5e0!3m2!1sru!2saz!4v1737581622584!5m2!1sru!2saz"
+	},
+
+	"branch5": {
+		"name": "Gəncə filialı",
+		"whatsapp": "https://wa.me/994558227279?text=Salam!%20Mən%20konsultasiyaya%20yazılmaq%20istəyirəm.",
+		"instagram": "https://www.instagram.com/parlaq_nitq_ve_psixoloji_inkishaf_merkezi/3",
+		"facebook": "https://www.facebook.com/parlaqnitqvepsixolojiinkishafmerkezi3",
+		"phone": "+994(55) 822 72 79",
+		"phoneHREF": "tel:994558227279",
+		"address": "Bakı şəhəri, Sabuncu rayonu, Əhməd Rəcəbli küçəsi, 1-ci məhəllə, 1-ci qonşuluq, 1-ci mənzil",
+		"location": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.2473655444464!2d49.84084407548345!3d40.425521155105045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x403087001d548a1f%3A0x3a49e0f9b9a79d0f!2zUGFybGFxIG5pdHEgaW5racWfYWYgbcmZcmvJmXpp!5e0!3m2!1sru!2saz!4v1737581622584!5m2!1sru!2saz"
+	}
+}

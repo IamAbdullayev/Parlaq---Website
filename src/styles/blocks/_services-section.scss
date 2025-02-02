@@ -1,0 +1,75 @@
+@use '../helpers' as *;
+
+
+
+
+
+.services-section {
+
+	&__title {
+
+	}
+
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+
+
+	&__item {
+		@include tablet {
+			flex-basis: calc((100% / 2) - 20px);
+		}
+
+		@include mobile {
+			flex-basis: auto;
+		}
+
+		flex: 1 1 calc((100% / 3) - 20px);
+	}
+}
+
+
+
+.item {
+	@include mobile {
+		gap: 10px;
+		padding: 20px;
+	}
+
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	padding: 40px;
+	box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+	background-color: #fff;
+	border-radius: var(--border-radius-size);
+
+	&__header {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+	}
+
+
+	&__icon {
+		width: 70px;
+		margin-left: -12px;
+	}
+
+
+	&__title {
+		@include fluid-text-size(36, 18);
+		
+		font-family: var(--font-family-accent);
+	}
+	
+	&__text {
+		@include fluid-text-size(22, 16);
+		
+		color: var(--color-grey);
+		line-height: 1.5;
+	}
+}
+

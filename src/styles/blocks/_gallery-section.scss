@@ -1,0 +1,122 @@
+@use "../helpers" as *;
+
+
+
+
+
+.gallery-section {
+	background-color: var(--border-light);
+	padding-block: 50px;
+
+	&__container {
+	}
+	&__title {
+		// color: invert(#000);
+	}
+}
+
+
+.gallery-wrapper {
+
+	@include tablet {
+		overflow: scroll;
+		display: block;
+		padding: var(--gap);
+		height: 50vh;
+	}
+
+	overflow: hidden;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.title-gallery {
+	// filter: invert(100%);
+
+	@include tablet {
+		position: relative;
+		img {
+			display: none;
+		}
+	}
+
+	img {
+		width: 350px;
+	}
+	
+	text-transform: uppercase;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	letter-spacing: .1em;
+	font-size: calc(var(--index) * 2.8);
+	position: absolute;
+	font-weight: 200;
+	text-align: center;
+	opacity: .9;
+	margin-top: .2em;
+
+
+	&__item {
+		display: block;
+		font-family: Helvetica, sans-serif;
+		font-size: calc(var(--index) * .75);
+		margin-top: 5px;
+	}
+}
+
+
+.gallery {
+	@include tablet {
+		width: 100%;
+		column-width: 10em;
+		transform: scale(1);
+		gap: 5px;
+	}
+
+	opacity: 0;
+	width: 30vw;
+	column-width: 2em;
+	gap: var(--gap);
+	transform: scale(8.2);
+	will-change: transform;
+	transition: transform 1s cubic-bezier(.075, 1, .25, 1), opacity 1s;
+
+	&__item {
+		@include tablet {
+			&:hover {
+				transform: scale(1.001);
+			}
+			
+			margin-bottom: 5px;
+		}
+
+		display: block;
+		margin-bottom: var(--gap);
+		transform: scale(1.001);
+		will-change: transform;
+		transition: .3s;
+
+		&:hover {
+			transform: scale(1.03);
+		}
+
+		&_img {
+			width: 100%;
+			display: block;
+		}
+	}
+}
+
+
+.loaded .gallery {
+	opacity: 1;
+}
+.loaded .title-gallery .title-gallery__item {
+	opacity: 0;
+}
+
+
+body .pswp .pswp__container {
+	transition: transform var(--transition-duration) ease-out;
+}

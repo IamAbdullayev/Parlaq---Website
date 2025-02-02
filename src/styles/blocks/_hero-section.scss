@@ -1,0 +1,114 @@
+@use '../helpers' as *;
+
+
+
+
+.hero-section {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	font-size: 20.4px;
+
+
+	// background: #000 url(../../images/home-bg.webp) 50% 50%/cover no-repeat;
+	// background-image: url(https://neiro-psy.ru/themes/neiropsi/assets/images/home2.webp);
+	// background-position: top;
+	// background-size: contain;
+	// background-repeat: no-repeat;
+
+	&__img {
+		width: 100%;
+    height: 45vw;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin-bottom: -8%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100em;
+    max-height: 45em;
+	}
+
+	&__container {
+		position: relative;
+		z-index: 1;
+		text-align: left;
+	}
+	
+	
+	&__content {
+		@include laptop-above {
+			max-width: rem(1000);
+		}
+		
+		padding: 20px 15px;
+		background-color: #fff;
+		max-width: rem(800);
+		border-radius: var(--border-radius-size);
+
+		box-shadow: 0 .5rem 5rem rgba(0, 0, 0, .1);;
+	}
+
+	&__title {
+		@include fluid-text-size(52, 28);
+		@include mobile-s-above {
+			padding-right: rem(150);
+		}
+		@include mobile-above {
+			padding-right: rem(200);
+		}
+		
+		font-family: var(--font-family-accent);
+		font-weight: 700;
+		margin-bottom: .25em;
+	}
+	
+	&__subtitle {
+		@include fluid-text-size(32, 16);
+		@include mobile-s-above {
+			padding-right: rem(100);
+		}
+
+		margin-bottom: 1em;
+	}
+	
+
+	&__contacts {
+		@include mobile-s {
+			gap: 5px;
+		}
+
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 10px;
+
+	}
+	
+	&__branch-selector {
+		@include mobile {
+			flex: 1 1 calc(50% - 5px);
+		}
+		@include mobile-s {
+			flex: 1 1 100%;
+		}
+
+		flex: 0 1 calc(100% / 3 - 7px);
+	}
+	
+
+	.hero-section__whatsapp {
+		@include mobile {
+			flex: 1 1 calc(50% - 5px);
+		}
+		@include mobile-s {
+			flex: 1 1 100%;
+		}
+
+		flex: 0 1 calc(100% / 3 - 7px);
+		background-color: #168004;
+		color: var(--color-light);
+	}
+}
+
+
+

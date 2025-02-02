@@ -1,0 +1,60 @@
+@use './helpers' as *;
+
+
+
+
+:root {
+	// =========== COLORS ==============
+	
+	// --primary-color: ;
+	// --secondary-color: ;
+	
+	--color-dark: #141414;
+	--color-light: #FFFFFF;
+	--color-grey: #9a9da8;
+	--color-red: #FF5500;
+	
+	--background-color: #F9F7F3;
+	--background-color-card: #f1f1f1;
+
+	--accent-color: #044421;
+	--accent-color-2: #FFBB00;
+	--accent-color-3: #FEEFD1;
+
+	--hover-color: #970c97;
+	--border-color: #E7E6E3;
+	
+	
+	// =========== FONTS ===============
+	
+	--font-family-base: 'Roboto', sans-serif;
+	--font-family-accent: 'Atyp', sans-serif;
+	
+	
+	// =========== CONTAINER ==========
+
+	// #{ } - Чтобы вычисления проводились корректно. Так как 'SCSS' почему-то не умеет в переменных правильно выполнять вычисления. 
+	--container-width: #{rem(1200)};
+	--container-padding-x: #{rem(15)};
+	
+	@include laptop {
+		--container-width: #{rem(1000)};
+	}
+	
+	
+	// =========== TRANSITION ==========
+	--transition-duration: 0.2s;
+	
+	
+	// =========== BORDER-RADIUS =======
+	
+	--border-radius-size: #{rem(10)};
+	
+
+	// =========== GALERRY =============
+
+	--gap: .5em;
+	--index: calc(1vw + 1vh);
+
+
+}
