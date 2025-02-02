@@ -1,0 +1,194 @@
+@use "../helpers" as *;
+
+
+
+
+
+.specialists-section {
+	&__container {
+	}
+	&__title {
+	}
+	&__specialists {
+	}
+	
+	&__button {
+		@include mobile {
+			margin-top: 2rem;
+		}
+		@include fluid-text-size(36, 16);
+
+		margin-top: 3rem;
+    text-align: center;
+		color: #6e0eaf;
+		
+		&_link {
+			display: inline-block;
+			background-color: #fcfcfc;
+			border: 2px solid rgba(113, 14, 177, .1);
+			padding: .7em 2em;
+			border-radius: 6em;
+			line-height: 1.5;
+			transition: all var(--transition-duration) ease;
+
+			&:hover {
+				color: #8c12de;
+				border-color: #8c12de;
+			}
+		}
+	}
+	
+}
+
+
+
+.specialists {
+
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+
+
+	&__card {
+		@include mobile {
+			flex-basis: calc((100% / 2) - 20px);
+		}
+		@include mobile-s {
+			flex-basis: 100%;
+		}
+
+		display: flex;
+		flex-direction: column;
+		flex: 0 0 calc((100% / 3) - 20px);
+
+		box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+
+		border-radius: 5px;
+		overflow: hidden;
+
+
+		&_hero {
+			@include mobile {
+				height: 275px;
+			}
+
+			position: relative;
+			height: 300px;
+		}
+
+		&_img {
+			object-fit: cover;
+			object-position: center;
+			width: 100%;
+			height: 100%;
+		}
+
+		&_name {
+			@include fluid-text-size(24, 18);
+
+			position: absolute;
+			bottom: rem(15);
+			left: rem(15);
+			z-index: 10;
+
+			background-color: var(--accent-color-3);
+
+			display: inline-block;
+			padding: 10px;
+			border-radius: 5px;
+
+			font-family: var(--font-family-accent);
+			font-weight: 700;
+
+		}
+
+
+		&_text {
+			
+			padding: 15px;
+		}
+
+		&_job {
+			@include fluid-text-size(16, 14);
+
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 15px;
+			color: var(--accent-color);
+		}
+
+		&_marks {
+			@include fluid-text-size(14, 12);
+			
+			display: flex;
+			flex-wrap: wrap;
+			gap: 10px;
+			margin-bottom: 20px;
+		}
+		&_mark {
+			display: inline-block;
+			padding: 5px 10px;
+			border-radius: 10px;
+			background-color: var(--background-color-card);
+		}
+
+		&_methods {
+			@include fluid-text-size(16, 14);
+			
+			display: flex;
+			flex-wrap: wrap;
+			gap: 10px;
+			margin-bottom: 20px;
+		}
+		&_method {
+			padding: 5px 10px;
+			border: 1px solid #710eb1;
+			color: #710eb1;
+			border-radius: 20px;
+			font-style: italic;
+		}
+		
+
+		// &_contacts {
+		// 	@include mobile-s {
+		// 		column-gap: 10px;
+		// 	}
+
+		// 	display: flex;
+		// 	align-items: center;
+		// 	flex-wrap: wrap;
+		// 	column-gap: 20px;
+		// 	row-gap: 5px;
+		// 	padding-inline: 5px;
+		// 	margin-bottom: 20px;
+
+		// }
+
+		&_instagram {
+			height: 30px;
+		}
+		
+		// &_whatsapp {
+		// 	height: 30px;
+
+		// }
+
+		// &_tel {
+		// 	height: 30px;
+
+		// }
+
+
+		// &_description {
+		// 	@include fluid-text-size(16, 14);
+
+		// 	color: var(--color-grey);
+		// 	line-height: 1.5;
+
+		// 	border-radius: 10px;
+		// 	background-color: var(--background-color-card);
+		// 	padding: 5px 10px;
+		// }
+	}
+}

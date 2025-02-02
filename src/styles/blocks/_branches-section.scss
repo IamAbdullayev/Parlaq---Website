@@ -1,0 +1,162 @@
+@use '../helpers' as *;
+
+
+
+
+.branches-section {
+	background-color: var(--color-light);
+	padding-block: 50px;
+
+
+	&__container {
+	}
+
+	&__title {
+		margin-bottom: 0;
+		// color: invert(#000);
+	}
+}
+
+
+.branches-section-swiper {
+	@include mobile {
+		padding: 20px 20px 30px 20px;
+	}
+
+	padding: 50px;
+	
+	&__wrapper {
+	}
+	
+	&__slide {
+		@include tablet {
+			flex-direction: column;
+			gap: 20px;
+			padding: 20px;
+		}
+		
+		display: flex;
+		gap: 30px;
+		padding: 40px;
+		background-color: var(--color-light);
+		border-radius: var(--border-radius-size);
+		// box-shadow: 0 .5rem 1rem rgba(255, 255, 255, 0.1);
+	}
+
+	&__media,
+	&__content {
+		@include mobile {
+			flex: 1 1 100%;
+		}
+	}
+	
+	
+	&__media {
+		flex: 1 0 40%;
+		border-radius: var(--border-radius-size);
+		overflow: hidden;
+		max-height: 350px;
+	}
+	
+	&__image {
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+		object-position: center;
+	}
+	
+	&__content {
+		@include mobile {
+			gap: 10px;
+		}
+		
+		flex: 1 1 60%;
+	}
+
+	&__title {
+		@include fluid-text-size(40, 20);
+		
+		font-family: var(--font-family-accent);
+		color: var(--color-dark);
+		margin-bottom: rem(15);
+	}
+	
+	&__contact {
+		@include fluid-text-size(16, 14);
+		
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: 10px;
+		color: var(--color-grey);
+		line-height: 1.5;
+		margin-bottom: rem(20);
+
+		& *:not(:first-child)::before {
+			content: '';
+			display: inline-block;
+			width: 1px;
+			height: 10px;
+			background-color: #000;
+			margin-right: 10px;
+		}
+
+	}
+	
+	&__address {
+		&:hover {
+			text-decoration: underline;
+			color: var(--accent-color-2);
+		}
+	}
+
+	&__instagram {
+		&:hover {
+			text-decoration: underline;
+			color: var(--accent-color-2);
+		}
+	}
+	&__whatsapp {
+		&:hover {
+			text-decoration: underline;
+			color: var(--accent-color-2);
+		}
+	}
+	&__tel {
+		&:hover {
+			text-decoration: underline;
+			color: var(--accent-color-2);
+		}
+	}
+	
+	&__text {
+		@include fluid-text-size(24, 16);
+		
+		color: var(--color-grey);
+		line-height: 1.5;
+	}
+}
+
+
+
+
+
+
+.branches-section-swiper .swiper-button-prev::after,
+.swiper-button-next::after {
+	@include mobile {
+		font-size: 0;
+	}
+
+	font-size: 48px;
+	color: var(--color-light);
+	
+}
+
+.branches-section-swiper .swiper-pagination-bullet {
+	
+	background-color: var(--color-grey);
+}
+
+.branches-section-swiper .swiper-pagination-bullet-active {
+	background-color: var(--color-light);
+}

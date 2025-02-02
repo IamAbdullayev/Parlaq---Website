@@ -1,0 +1,33 @@
+@use './helpers' as *;
+
+
+
+
+
+[class*="__container"] {
+	max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+
+	margin-inline: auto; // т. е. правый и левый margin
+	padding-inline: var(--container-padding-x); // правый и левый padding
+}
+
+
+.visually-hidden {
+	@include visually-hidden;
+}
+
+
+.hidden-mobile {
+	@include mobile {
+		display: none !important;
+	}
+}
+
+
+.visible-mobile {
+	@include mobile-above {
+		display: none !important;
+	}
+}
+
+

@@ -1,0 +1,223 @@
+@use './helpers' as *;
+
+
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: var(--font-family-base);
+	color: var(--color-dark);
+	font-weight: 400;
+	line-height: 1.2;
+}
+
+
+.wrapper {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+
+.main {
+	@include mobile {
+		gap: 3rem;
+	}
+
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 auto;
+	min-width: 0;
+	gap: 5rem;
+}
+
+
+a,
+button,
+label,
+input,
+textarea,
+select,
+svg * {
+	transition-duration: var(--transition-duration);
+}
+
+
+.logo {
+	@include tablet {
+		width: rem(150);
+	}
+
+	display: block;
+	width: rem(200);
+}
+
+
+.menu {
+	@include mobile {
+		width: 100%;
+		padding: 0 10px;
+	}
+	
+	&__list {
+		@include tablet {
+			gap: 10px;
+		}
+
+		display: flex;
+		gap: 20px;
+		height: 100%;
+	}
+	
+	&__link {
+		@include fluid-text-size(18, 16);
+
+		display: block;
+		padding: 5px;
+		font-weight: 400;
+		line-height: 1;
+
+		white-space: nowrap; /* Запрещает перенос текста */
+		overflow: hidden; /* Обрезает текст, если он выходит за границы */
+		text-overflow: ellipsis; /* Добавляет "..." в случае обрезки текста */
+	}
+
+	&__link:hover {
+		color: var(--hover-color);
+	}
+}
+
+
+.branch-selector {
+	@include fluid-text-size(24, 16);
+	@include mobile {
+		width: 100%;
+	}
+
+	display: inline-block;
+	padding: 12px 25px;
+	border: 2px solid var(--border-color);
+	border-radius: var(--border-radius-size);
+	text-align: center;
+	
+	&:focus {
+		outline: none;
+		box-shadow: 0 0.5rem 5rem rgba(0, 0, 0, 0.1);
+	}
+}
+	
+
+.button {
+	@include fluid-text-size(24, 16);
+	@include mobile-s {
+		width: 100%;
+	}
+
+	display: inline-block;
+	padding: 12px 25px;
+	border: 1px solid var(--border-color);
+	border-radius: var(--border-radius-size);
+	background-color: var(--accent-color-2);
+	text-align: center;
+
+
+	&:hover {
+		filter: brightness(110%)
+	}
+}
+
+
+
+
+.section-title {
+	@include fluid-text-size(48, 24);
+		
+	font-family: var(--font-family-accent);
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+
+.instagram {
+	display: flex;
+	align-items: center;
+
+	&:hover {
+		svg {
+			fill: var(--hover-color);
+		}
+	}
+	
+	& svg {
+		display: block;
+		height: 100%;
+		width: auto;
+		fill: #dd006b;
+	}
+}
+
+.whatsapp {
+	display: flex;
+	align-items: center;
+
+	&:hover {
+		svg {
+			fill: var(--hover-color);
+		}
+	}
+	
+	& svg {
+		display: block;
+		height: 100%;
+		width: auto;
+		fill: #00940a;
+	}
+
+}
+
+.facebook {
+	display: flex;
+	align-items: center;
+
+	&:hover {
+		svg {
+			fill: var(--hover-color);
+		}
+	}
+	
+	& svg {
+		display: block;
+		height: 100%;
+		width: auto;
+		fill: #1E3050;
+	}
+}
+
+
+
+.tel {
+	display: flex;
+	align-items: center;
+	gap: 7px;
+	color: var(--accent-color);
+
+	&:hover {
+		color: var(--hover-color);
+		text-decoration: underline;
+
+		svg {
+			fill: var(--hover-color);
+		}
+	}
+
+	& svg {
+		display: block;
+		height: 100%;
+		width: auto;
+		fill: var(--accent-color);
+	}
+}
