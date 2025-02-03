@@ -2,74 +2,87 @@
 
 
 
-
-
 .services-section {
 
+	&__container {
+	}
+
 	&__title {
-
 	}
 
-	&__items {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 20px;
+	&__accordion {
 	}
+}
 
+
+.accordion {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: start;
+	gap: 15px;
 
 	&__item {
-		@include tablet {
-			flex-basis: calc((100% / 2) - 20px);
+		flex: 0 0 75%;
+		position: relative;
+		box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+		border-radius: var(--border-radius-size);
+		transition: all var(--transition-duration) linear;
+		
+		&:hover {
+			box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+			.accordion__item_trigger {
+				background-color: #f8f8f8;
+				text-decoration: underline;
+				
+			}
 		}
 
-		@include mobile {
-			flex-basis: auto;
+		&_input {
+			position: absolute;
+			top: 0;
+			left: 0;
+			opacity: 0;
 		}
 
-		flex: 1 1 calc((100% / 3) - 20px);
+		&_input:checked ~ .accordion__item_content {
+			max-height: 100px;
+			margin-bottom: 30px;
+		}
+		&_input:checked ~ .accordion__item_trigger svg {
+			transform: rotate(90deg);
+		}
+
+		&_trigger {
+			@include fluid-text-size(36, 18);
+
+			display: flex;
+			align-items: center;
+			gap: 15px;
+			padding: 20px;
+			border-radius: var(--border-radius-size);
+			font-family: var(--font-family-accent);
+			line-height: 1;
+			cursor: pointer;
+
+			& svg {
+				display: inline-block;
+				height: 25px;
+				transition: all var(--transition-duration) linear;
+			}
+		}
+
+		&_content {
+			@include fluid-text-size(22, 16);
+			
+			max-height: 0;
+			padding: 0 20px;
+			overflow: hidden;
+			transition: all var(--transition-duration) linear;
+
+			color: var(--color-grey);
+			line-height: 1.5;
+		}
 	}
 }
 
-
-
-.item {
-	@include mobile {
-		gap: 10px;
-		padding: 20px;
-	}
-
-	display: flex;
-	flex-direction: column;
-	gap: 30px;
-	padding: 40px;
-	box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
-	background-color: #fff;
-	border-radius: var(--border-radius-size);
-
-	&__header {
-		display: flex;
-		align-items: center;
-		gap: 5px;
-	}
-
-
-	&__icon {
-		width: 70px;
-		margin-left: -12px;
-	}
-
-
-	&__title {
-		@include fluid-text-size(36, 18);
-		
-		font-family: var(--font-family-accent);
-	}
-	
-	&__text {
-		@include fluid-text-size(22, 16);
-		
-		color: var(--color-grey);
-		line-height: 1.5;
-	}
-}
 

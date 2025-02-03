@@ -5,25 +5,23 @@
 
 .branches-section {
 	background-color: var(--color-light);
-	padding-block: 50px;
 
 
 	&__container {
 	}
 
 	&__title {
-		margin-bottom: 0;
-		// color: invert(#000);
+		margin-bottom: .5rem;
 	}
 }
 
 
 .branches-section-swiper {
 	@include mobile {
-		padding: 20px 20px 30px 20px;
+		padding: 15px 15px 30px;
 	}
 
-	padding: 50px;
+	padding: 20px 50px 30px;
 	
 	&__wrapper {
 	}
@@ -32,45 +30,49 @@
 		@include tablet {
 			flex-direction: column;
 			gap: 20px;
-			padding: 20px;
 		}
 		
 		display: flex;
 		gap: 30px;
-		padding: 40px;
+		padding: 0;
 		background-color: var(--color-light);
 		border-radius: var(--border-radius-size);
 		// box-shadow: 0 .5rem 1rem rgba(255, 255, 255, 0.1);
 	}
 
-	&__media,
-	&__content {
-		@include mobile {
-			flex: 1 1 100%;
-		}
-	}
 	
 	
 	&__media {
-		flex: 1 0 40%;
+		@include tablet {
+			width: 100%;
+		}
+
+		width: 40%;
+		position: relative;
 		border-radius: var(--border-radius-size);
 		overflow: hidden;
-		max-height: 350px;
+		min-height: 350px;
 	}
 	
 	&__image {
+		position: absolute;
+		top: 0;
+		left: 0;
 		width: 100%;
-		height: auto;
+		height: 100%;
 		object-fit: cover;
 		object-position: center;
 	}
 	
 	&__content {
+		@include tablet {
+			width: 100%;
+		}
 		@include mobile {
 			gap: 10px;
 		}
 		
-		flex: 1 1 60%;
+		width: 60%;
 	}
 
 	&__title {
@@ -102,30 +104,12 @@
 
 	}
 	
-	&__address {
-		&:hover {
-			text-decoration: underline;
-			color: var(--accent-color-2);
-		}
-	}
-
-	&__instagram {
-		&:hover {
-			text-decoration: underline;
-			color: var(--accent-color-2);
-		}
-	}
-	&__whatsapp {
-		&:hover {
-			text-decoration: underline;
-			color: var(--accent-color-2);
-		}
-	}
-	&__tel {
-		&:hover {
-			text-decoration: underline;
-			color: var(--accent-color-2);
-		}
+	&__address:hover,
+	&__instagram:hover,
+	&__whatsapp:hover,
+	&__tel:hover {
+		text-decoration: underline;
+		color: var(--accent-color-2);
 	}
 	
 	&__text {
@@ -146,17 +130,10 @@
 	@include mobile {
 		font-size: 0;
 	}
-
 	font-size: 48px;
-	color: var(--color-light);
-	
+	color: var(--color-dark);
 }
-
-.branches-section-swiper .swiper-pagination-bullet {
-	
-	background-color: var(--color-grey);
-}
-
+.branches-section-swiper .swiper-pagination-bullet,
 .branches-section-swiper .swiper-pagination-bullet-active {
-	background-color: var(--color-light);
+	background-color: var(--color-dark);
 }
