@@ -8,7 +8,7 @@
 	flex-direction: column;
 	
 	&__top {
-		@include mobile-s {
+		@include mobile {
 			justify-content: center;
 		}
 
