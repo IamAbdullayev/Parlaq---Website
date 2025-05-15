@@ -33,7 +33,6 @@ Parlaq---Website/
 ## 🚀 Getting Started
 
 1. **Clone the repository:**
-
 ```bash
 git clone https://github.com/IamAbdullayev/Parlaq---Website.git
 cd Parlaq---Website
