@@ -19,12 +19,11 @@
 
 ```bash
 Parlaq---Website/
-├── public/ # Static assets
+├── public/ # Images and fonts and reusable UI components
 ├── src/
-│   ├── assets/ # Images and fonts
-│   ├── components/ # Reusable UI components
+│   ├── libs/ # libraries used
 │   ├── styles/ # SCSS styles
-│   └── main.js # JavaScript entry point
+│   └── js/ # JavaScript entry point
 ├── index.html # Main HTML file
 ├── package.json # Dependencies and scripts
 ├── vite.config.js # Vite configuration
